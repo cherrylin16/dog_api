@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* ── the two side columns ── */
+.repository,
+.ban-list {
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+}
+
+.repository {
+  background-color: #dfbf9f;
+}
+
+.ban-list {
+  background-color: #d2a679;
+}
+
+/* ── the middle column ── */
+.discover {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.discover h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* ── the card holding the current dog ── */
+.breed-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fffaf3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.breed-card.empty {
+  color: #8a6f55;
+}
+
+.dog-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ── clickable attribute text ── */
+.attribute {
+  cursor: pointer;
+  color: #7a4b1e;
+  font-weight: 600;
+  border-bottom: 2px dotted #c08a4d;
+  transition: background-color 0.15s;
+}
+
+.attribute:hover {
+  background-color: #f3d9b8;
+  border-radius: 4px;
+}
+
+.unknown {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ── temperament + ban list pills ── */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 15px;
+  background-color: #f3d9b8;
+  border-bottom: none;
+}
+
+.banned-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 15px;
+  background-color: #8a4b2e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.banned-tag:hover {
+  background-color: #6e3a22;
+}
+
+/* ── "Breeds You've Viewed" list ── */
+.history-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.history-list li {
+  padding: 6px 10px;
+  margin: 4px 0;
+  background-color: #fffaf3;
+  border-radius: 6px;
+}
+
+.count {
+  color: #8a6f55;
+  font-size: 0.85rem;
+}
+
+.hint {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #8a6f55;
+}
+
+/* ── the Discover! button (carried over from your screenshot project) ── */
+.button {
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 7px rgb(62, 62, 62);
+}
+
+.button:hover {
+  background-color: #1a1a1a;
+}
+
+.button:active {
+  background-color: #0b0b0b;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+  box-shadow: 0 3px #999;
+}
