@@ -19,7 +19,7 @@ The following **required** functionality is completed:
 - [X] **API call response results should appear random to the user**
   - Clicking on the API call button should generate a seemingly random new result each time
   - Note: Repeat results are permitted but the API used should have a reasonably large amount of data and repeats should not be frequent
-- [X] **Clicking on a displayed value for one attribute adds it to a displayed ban **list**
+- [X] **Clicking on a displayed value for one attribute adds it to a displayed ban **list****
   - At least one attribute for each API result should be clickable
   - Clicking on a clickable attribute not on the ban list, should imnmediately add it to the ban list 
   - Clicking on an attribute in the ban list should immediately remove it from the ban list 
@@ -42,10 +42,6 @@ Here's a walkthrough of implemented user stories:
 <img src='api.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows.
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
